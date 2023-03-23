@@ -16,8 +16,9 @@ const images = [
 const galleryEl = document.querySelector('.gallery');
 
 const makeGalleryImgList = elements => {
-  return elements.map((img) => `<li class = 'style'><img src = '${img.url}' alt = '${img.alt}' class = 'flex'></li>`).join("");
+  return elements.map((img) => `<li><img src = '${img.url}' alt = '${img.alt}' class = 'flex'></li>`).join("");
 };
+galleryEl.style.listStyle = 'none';
 
 const galleryImgList = makeGalleryImgList(images);
 console.log(galleryImgList);

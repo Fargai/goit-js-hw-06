@@ -23,10 +23,6 @@ button {
   cursor: pointer;
 }
 
-.style {
-  list-style: none;
-}
-
 .flex {
   display: flex;
   width: 350px;
